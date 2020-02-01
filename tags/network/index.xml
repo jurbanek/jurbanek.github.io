@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>technology on Urbanek.io</title>
-    <link>https://www.urbanek.io/categories/technology/</link>
-    <description>Recent content in technology on Urbanek.io</description>
+    <title>network on Urbanek.io</title>
+    <link>https://www.urbanek.io/tags/network/</link>
+    <description>Recent content in network on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 30 Jan 2020 23:14:48 -0600</lastBuildDate>
     
-	<atom:link href="https://www.urbanek.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.urbanek.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       <guid>https://www.urbanek.io/post/interview-fundies-longest-prefix-match/</guid>
       <description>Given Given the following simplified IPv4 route table:
 Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 172.16.1.1010.0.0.0 255.0.0.0 172.16.1.2010.0.0.0 255.255.255.0 172.16.1.3010.128.0.0 255.252.0.0 172.16.1.4010.128.0.0 255.255.0.0 172.16.1.5010.128.132.0 255.255.254.0 172.16.1.60 Question   To reach 8.8.8.8 what gateway will be chosen? To reach 10.128.0.10 what gateway will be chosen? To reach 10.128.134.52 what gateway will be chosen? What is the longest prefix in the table? What is the shortest prefix in the table?</description>
-    </item>
-    
-    <item>
-      <title>They Call Her LINA</title>
-      <link>https://www.urbanek.io/post/they-call-her-lina/</link>
-      <pubDate>Wed, 22 Jan 2020 21:11:00 -0600</pubDate>
-      
-      <guid>https://www.urbanek.io/post/they-call-her-lina/</guid>
-      <description>She&#39;s in there somewhere&amp;hellip;
- R.I.P. ASA
-firepower [fahyuh r-pou-er]pun1 foreshadowing at its finest2 tragic ironyPeer | review | needed. | Nah.</description>
     </item>
     
   </channel>
