@@ -5,10 +5,21 @@
     <link>https://www.urbanek.io/categories/technology/</link>
     <description>Recent content in technology on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Jan 2020 23:14:48 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 12:25:40 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agenda Time Planning</title>
+      <link>https://www.urbanek.io/post/agenda-time-planning/</link>
+      <pubDate>Tue, 04 Feb 2020 12:25:40 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/agenda-time-planning/</guid>
+      <description>How hard can it be to plan a day? The technology behind spitballing an agenda taking into account start times and duration should be easy. It wasn&#39;t (at least for me and the 0 DDG searches I performed to investigate).
+&amp;ldquo;Go ahead&amp;hellip; waste my day.&amp;rdquo; Below is the normal sequence of time wasting events:
+ Flesh out agenda with start times in Excel, text editor, OneNote, etc. Realize an item was missed or a duration needs to be adjusted.</description>
+    </item>
     
     <item>
       <title>Interview Fundies: Longest Prefix Match</title>
