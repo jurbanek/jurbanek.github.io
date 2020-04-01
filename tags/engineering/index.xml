@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>engineering on Urbanek.io</title>
+    <link>https://www.urbanek.io/tags/engineering/</link>
+    <description>Recent content in engineering on Urbanek.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 08 Mar 2020 22:42:08 -0600</lastBuildDate>
+    
+	<atom:link href="https://www.urbanek.io/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cautionary Tale — Continental Express Flight 2574</title>
+      <link>https://www.urbanek.io/post/cautionary-tale-flight-2574/</link>
+      <pubDate>Sun, 08 Mar 2020 22:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/cautionary-tale-flight-2574/</guid>
+      <description>A cautionary tale of how imprecise language, along with its well-known accomplice latent safety culture, killed 14 people on September 11th, 1991.
+Post is a follow up to Engineering Culture - Use Precise Language.
+  Image: Embraer EMB 120 Brasilia aircraft
+  September 10, 1991 Overnight maintenance is scheduled to replace left and right de-ice boots on the horizontal stabilizer (part of the tail) of an Embraer EMB 120 Brasilia.</description>
+    </item>
+    
+    <item>
+      <title>Engineering Culture — Use Precise Language</title>
+      <link>https://www.urbanek.io/post/engineering-culture-use-precise-language/</link>
+      <pubDate>Sun, 16 Feb 2020 19:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/engineering-culture-use-precise-language/</guid>
+      <description>Language and culture are intimately related. Human communication is arguably one of the most complex negotiations in the known Universe (citation needed).
+A principal factor in assessing an organization&#39;s engineering culture is reviewing how engineering resources communicate, both verbally and in writing.
+Regardless of engineering field, any technical discipline that interfaces with humanity (very close to my personal definition of engineering) finds itself communicating ideas, operations, limitations, concerns, and recommendations with other engineers, scientists, technicians, and customers.</description>
+    </item>
+    
+  </channel>
+</rss>

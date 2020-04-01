@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cautionary tale on Urbanek.io</title>
+    <link>https://www.urbanek.io/tags/cautionary-tale/</link>
+    <description>Recent content in cautionary tale on Urbanek.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 08 Mar 2020 22:42:08 -0600</lastBuildDate>
+    
+	<atom:link href="https://www.urbanek.io/tags/cautionary-tale/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cautionary Tale — Continental Express Flight 2574</title>
+      <link>https://www.urbanek.io/post/cautionary-tale-flight-2574/</link>
+      <pubDate>Sun, 08 Mar 2020 22:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/cautionary-tale-flight-2574/</guid>
+      <description>A cautionary tale of how imprecise language, along with its well-known accomplice latent safety culture, killed 14 people on September 11th, 1991.
+Post is a follow up to Engineering Culture - Use Precise Language.
+  Image: Embraer EMB 120 Brasilia aircraft
+  September 10, 1991 Overnight maintenance is scheduled to replace left and right de-ice boots on the horizontal stabilizer (part of the tail) of an Embraer EMB 120 Brasilia.</description>
+    </item>
+    
+  </channel>
+</rss>
