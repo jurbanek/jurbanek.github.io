@@ -60,8 +60,9 @@ Regardless of engineering field, any technical discipline that interfaces with h
       <pubDate>Thu, 30 Jan 2020 23:14:48 -0600</pubDate>
       
       <guid>https://www.urbanek.io/post/interview-fundies-longest-prefix-match/</guid>
-      <description>Given Given the following simplified IPv4 route table:
-Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 172.16.1.1010.0.0.0 255.0.0.0 172.16.1.2010.0.0.0 255.255.255.0 172.16.1.3010.128.0.0 255.252.0.0 172.16.1.4010.128.0.0 255.255.0.0 172.16.1.5010.128.132.0 255.255.254.0 172.16.1.60 Question   To reach 8.8.8.8 what gateway will be chosen? To reach 10.128.0.10 what gateway will be chosen? To reach 10.128.134.52 what gateway will be chosen? What is the longest prefix in the table? What is the shortest prefix in the table?</description>
+      <description>Figure: Next Year&#39;s Gartner MQ Leader in Enterprise Network Security
+  Given Given the following simplified IPv4 route table:
+Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 172.16.1.1010.0.0.0 255.0.0.0 172.16.1.2010.0.0.0 255.255.255.0 172.16.1.3010.128.0.0 255.252.0.0 172.16.1.4010.128.0.0 255.255.0.0 172.16.1.5010.128.132.0 255.255.254.0 172.16.1.60 Question   To reach 8.8.8.8 what gateway will be chosen? To reach 10.128.0.10 what gateway will be chosen? To reach 10.128.134.52 what gateway will be chosen?</description>
     </item>
     
     <item>
