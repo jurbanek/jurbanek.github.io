@@ -1,0 +1,30 @@
+img.shadow {
+   box-shadow: 8px 8px 5px grey;
+}
+.lightbox {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 100000;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.8);
+ }
+ .lightbox img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   max-width: 100%;
+   max-height: 100%;
+ }
+ .lightbox:target {
+   outline: none;
+   display: block;
+ }
+ 

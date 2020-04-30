@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Urbanek.io'>
 <meta property='og:type' content='article'><meta property='article:section' content='post'><meta property='article:tag' content='excel'><meta property='article:tag' content='efficiency'><meta property='article:published_time' content='2020-02-04T12:25:40-06:00'/><meta property='article:modified_time' content='2020-02-04T12:25:40-06:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.62.2" />
+<meta name="generator" content="Hugo 0.69.2" />
 
   <title>Agenda Time Planning • Urbanek.io</title>
   <link rel='canonical' href='https://www.urbanek.io/post/agenda-time-planning/'>
@@ -176,13 +176,20 @@
   
 
   <div class='container entry-content'>
-  <figure>
-    <img src="HeadWasHere.png"
-         alt="Brick Wall" width="50%"/> 
+  
+<figure>
+   <a href="#12e3da85cea6fe369c37e7e60cf9b703-lightbox">
+      <img src="HeadWasHere.png"
+            alt="Head shot" class="shadow"/> 
+   </a><figcaption>
+         <p><em>Head shot</em></p>
+      </figcaption>
 </figure>
-
-<h2 id="how-hard-can-it-be-to-plan-a-day">How hard can it be to plan a day?</h2>
-<p>The technology behind spitballing an agenda taking into account start times and duration should be easy. It wasn't (at least for me and the 0 <a href="https://www.duckduckgo.com">DDG</a> searches I performed to investigate).</p>
+<a href="#_" class="lightbox" id="12e3da85cea6fe369c37e7e60cf9b703-lightbox">
+   <img src="HeadWasHere.png" alt="Head shot" >
+</a>
+<h2 id="how-hard-can-it-be-to-plan-a-day">How hard can it be to plan a day</h2>
+<p>The technology behind spitballing an agenda taking into account start times and duration should be easy. It wasn&rsquo;t (at least for me and the 0 <a href="https://www.duckduckgo.com">DDG</a> searches I performed to investigate).</p>
 <h2 id="go-ahead-waste-my-day">&ldquo;Go ahead&hellip; waste my day.&rdquo;</h2>
 <p>Below is the normal sequence of time wasting events:</p>
 <ol>
@@ -211,7 +218,7 @@
 <li>The first <code>Start Time</code> in cell <code>A2</code> can be updated. <em>All other <code>Start Time</code>s are calculated.</em></li>
 <li>Uses Excel <code>INDIRECT()</code>, <code>ADDRESS()</code>, <code>ROW()</code>, <code>COLUMN()</code>, and <code>TIME()</code> built-in functions.</li>
 <li>The <em>exact same</em> formula is used in all calculated cells.</li>
-<li>When using traditional relative references I encountered trouble preserving the formula when inserting new rows. The issue was solved using <code>INDIRECT()</code> and it's brethren.</li>
+<li>When using traditional relative references I encountered trouble preserving the formula when inserting new rows. The issue was solved using <code>INDIRECT()</code> and it&rsquo;s brethren.</li>
 <li>To change from 24-hour time to AM/PM select the <code>Start Time</code> cells, <em>right-click</em> <code>Format Cells</code> &gt; <code>Number</code> &gt; <code>Time</code> &gt; (Choose Preference)</li>
 </ul>
 

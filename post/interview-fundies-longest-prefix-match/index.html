@@ -2,20 +2,20 @@
 <html lang='en'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Figure: Next Year&#39;s Gartner MQ Leader in Enterprise Network Security
-  Given Given the following simplified IPv4 route table:
+<meta name='description' content='Next Year&rsquo;s Gartner MQ Leader in Enterprise Network Security
+ Given Given the following simplified IPv4 route table:
 Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 172.16.1.1010.0.0.0 255.0.0.0 172.16.1.2010.0.0.0 255.255.255.0 172.16.1.3010.128.0.0 255.252.0.0 172.16.1.4010.128.0.0 255.255.0.0 172.16.1.5010.128.132.0 255.255.254.0 172.16.1.60 Question   To reach 8.8.8.8 what gateway will be chosen? To reach 10.128.0.10 what gateway will be chosen? To reach 10.128.134.52 what gateway will be chosen?'>
 <meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='Interview Fundies: Longest Prefix Match • Urbanek.io'>
-<meta property='og:description' content='Figure: Next Year&#39;s Gartner MQ Leader in Enterprise Network Security
-  Given Given the following simplified IPv4 route table:
+<meta property='og:description' content='Next Year&rsquo;s Gartner MQ Leader in Enterprise Network Security
+ Given Given the following simplified IPv4 route table:
 Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 172.16.1.1010.0.0.0 255.0.0.0 172.16.1.2010.0.0.0 255.255.255.0 172.16.1.3010.128.0.0 255.252.0.0 172.16.1.4010.128.0.0 255.255.0.0 172.16.1.5010.128.132.0 255.255.254.0 172.16.1.60 Question   To reach 8.8.8.8 what gateway will be chosen? To reach 10.128.0.10 what gateway will be chosen? To reach 10.128.134.52 what gateway will be chosen?'>
 <meta property='og:url' content='https://www.urbanek.io/post/interview-fundies-longest-prefix-match/'>
 <meta property='og:site_name' content='Urbanek.io'>
 <meta property='og:type' content='article'><meta property='article:section' content='post'><meta property='article:tag' content='interview'><meta property='article:tag' content='network'><meta property='article:tag' content='route'><meta property='article:tag' content='fundies'><meta property='article:published_time' content='2020-01-30T23:14:48-06:00'/><meta property='article:modified_time' content='2020-01-30T23:14:48-06:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.62.2" />
+<meta name="generator" content="Hugo 0.69.2" />
 
   <title>Interview Fundies: Longest Prefix Match • Urbanek.io</title>
   <link rel='canonical' href='https://www.urbanek.io/post/interview-fundies-longest-prefix-match/'>
@@ -178,13 +178,18 @@ Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 1
   
 
   <div class='container entry-content'>
-  <figure>
-    <img src="EthernetCable.png"
-         alt="Ethernet Cable" width="600"/> <figcaption>
-            <p>Figure: Next Year's Gartner MQ Leader in Enterprise Network Security</p>
-        </figcaption>
+  
+<figure>
+   <a href="#80d4977c6a6e15f0dad8ba3c3dca2b2e-lightbox">
+      <img src="EthernetCable.png"
+            alt="Next Year&amp;rsquo;s Gartner MQ Leader in Enterprise Network Security" width="600"/> 
+   </a><figcaption>
+         <p>Next Year&rsquo;s Gartner MQ Leader in Enterprise Network Security</p>
+      </figcaption>
 </figure>
-
+<a href="#_" class="lightbox" id="80d4977c6a6e15f0dad8ba3c3dca2b2e-lightbox">
+   <img src="EthernetCable.png" alt="Next Year&amp;rsquo;s Gartner MQ Leader in Enterprise Network Security" >
+</a>
 <h2 id="given">Given</h2>
 <p>Given the following <em>simplified</em> IPv4 route table:</p>
 <pre><code>Network          Netmask           Gateway
@@ -213,9 +218,7 @@ Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 1
 </blockquote>
 <p>Routing tables are not evaluated top-down like an access control list. Instead, the table is evaluated and the longest prefix match is the winner.</p>
 <blockquote>
-<p>
-<small>Practical routing in hardware or as implemented in software contains more layers than described in this simple example. For example, our simple example does not differentiate between a routing table (one per routing protocol) and forwarding table (a separate table composed of the best routes across all route tables includes longest prefix match, administrative distance, and other parameters). The example is simply probing for fundamental understanding of <a href="https://en.wikipedia.org/wiki/Longest_prefix_match">longest prefix match</a> which requires fundamental understanding of <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">variable-length subnet masking (VLSM)</a>. If a candidate fails at longest prefix match, additional routing questioning is often moot.
-</small></p>
+<p><small>Practical routing in hardware or as implemented in software contains more layers than described in this simple example. For example, our simple example does not differentiate between a routing table (one per routing protocol) and forwarding table (a separate table composed of the best routes across all route tables includes longest prefix match, administrative distance, and other parameters). The example is simply probing for fundamental understanding of <a href="https://en.wikipedia.org/wiki/Longest_prefix_match">longest prefix match</a> which requires fundamental understanding of <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">variable-length subnet masking (VLSM)</a>. If a candidate fails at longest prefix match, additional routing questioning is often moot.</small></p>
 </blockquote>
 <h2 id="explain">Explain</h2>
 <h3 id="q1">Q1</h3>

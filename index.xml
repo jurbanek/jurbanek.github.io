@@ -28,8 +28,8 @@
       <guid>https://www.urbanek.io/post/cautionary-tale-flight-2574/</guid>
       <description>A cautionary tale of how imprecise language, along with its well-known accomplice latent safety culture, killed 14 people on September 11th, 1991.
 Post is a follow up to Engineering Culture - Use Precise Language.
-  Image: Embraer EMB 120 Brasilia aircraft
-  September 10, 1991 Overnight maintenance is scheduled to replace left and right de-ice boots on the horizontal stabilizer (part of the tail) of an Embraer EMB 120 Brasilia.</description>
+Image: Embraer EMB 120 Brasilia aircraft
+ September 10, 1991 Overnight maintenance is scheduled to replace left and right de-ice boots on the horizontal stabilizer (part of the tail) of an Embraer EMB 120 Brasilia.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ Post is a follow up to Engineering Culture - Use Precise Language.
       
       <guid>https://www.urbanek.io/post/engineering-culture-use-precise-language/</guid>
       <description>Language and culture are intimately related. Human communication is arguably one of the most complex negotiations in the known Universe (citation needed).
-A principal factor in assessing an organization&#39;s engineering culture is reviewing how engineering resources communicate, both verbally and in writing.
+A principal factor in assessing an organization&amp;rsquo;s engineering culture is reviewing how engineering resources communicate, both verbally and in writing.
 Regardless of engineering field, any technical discipline that interfaces with humanity (very close to my personal definition of engineering) finds itself communicating ideas, operations, limitations, concerns, and recommendations with other engineers, scientists, technicians, and customers.</description>
     </item>
     
@@ -49,9 +49,10 @@ Regardless of engineering field, any technical discipline that interfaces with h
       <pubDate>Tue, 04 Feb 2020 12:25:40 -0600</pubDate>
       
       <guid>https://www.urbanek.io/post/agenda-time-planning/</guid>
-      <description>How hard can it be to plan a day? The technology behind spitballing an agenda taking into account start times and duration should be easy. It wasn&#39;t (at least for me and the 0 DDG searches I performed to investigate).
+      <description>Head shot
+ How hard can it be to plan a day The technology behind spitballing an agenda taking into account start times and duration should be easy. It wasn&amp;rsquo;t (at least for me and the 0 DDG searches I performed to investigate).
 &amp;ldquo;Go ahead&amp;hellip; waste my day.&amp;rdquo; Below is the normal sequence of time wasting events:
- Flesh out agenda with start times in Excel, text editor, OneNote, etc. Realize an item was missed or a duration needs to be adjusted.</description>
+ Flesh out agenda with start times in Excel, text editor, OneNote, etc.</description>
     </item>
     
     <item>
@@ -60,8 +61,8 @@ Regardless of engineering field, any technical discipline that interfaces with h
       <pubDate>Thu, 30 Jan 2020 23:14:48 -0600</pubDate>
       
       <guid>https://www.urbanek.io/post/interview-fundies-longest-prefix-match/</guid>
-      <description>Figure: Next Year&#39;s Gartner MQ Leader in Enterprise Network Security
-  Given Given the following simplified IPv4 route table:
+      <description>Next Year&amp;rsquo;s Gartner MQ Leader in Enterprise Network Security
+ Given Given the following simplified IPv4 route table:
 Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 172.16.1.1010.0.0.0 255.0.0.0 172.16.1.2010.0.0.0 255.255.255.0 172.16.1.3010.128.0.0 255.252.0.0 172.16.1.4010.128.0.0 255.255.0.0 172.16.1.5010.128.132.0 255.255.254.0 172.16.1.60 Question   To reach 8.8.8.8 what gateway will be chosen? To reach 10.128.0.10 what gateway will be chosen? To reach 10.128.134.52 what gateway will be chosen?</description>
     </item>
     
@@ -71,7 +72,7 @@ Network Netmask Gateway------------ ------------- -----------0.0.0.0 0.0.0.0 1
       <pubDate>Wed, 22 Jan 2020 21:11:00 -0600</pubDate>
       
       <guid>https://www.urbanek.io/post/they-call-her-lina/</guid>
-      <description>She&#39;s in there somewhere&amp;hellip;
+      <description>She&amp;rsquo;s in there somewhere&amp;hellip;
  R.I.P. ASA
 firepower [fahyuh r-pou-er]pun1 foreshadowing at its finest2 tragic ironyPeer | review | needed. | Nah.</description>
     </item>
