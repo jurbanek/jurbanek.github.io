@@ -5,10 +5,19 @@
     <link>https://www.urbanek.io/categories/</link>
     <description>Recent content in Categories on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 08 Mar 2020 22:42:08 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 21:42:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>technology</title>
+      <link>https://www.urbanek.io/categories/technology/</link>
+      <pubDate>Mon, 11 May 2020 21:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/categories/technology/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>humanity</title>
@@ -16,15 +25,6 @@
       <pubDate>Sun, 08 Mar 2020 22:42:08 -0600</pubDate>
       
       <guid>https://www.urbanek.io/categories/humanity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>technology</title>
-      <link>https://www.urbanek.io/categories/technology/</link>
-      <pubDate>Sun, 16 Feb 2020 19:42:08 -0600</pubDate>
-      
-      <guid>https://www.urbanek.io/categories/technology/</guid>
       <description></description>
     </item>
     

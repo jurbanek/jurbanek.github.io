@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://www.urbanek.io/</loc>
-    <lastmod>2020-03-08T22:42:08-06:00</lastmod>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
   </url>
   
   <url>
@@ -13,7 +13,42 @@
   
   <url>
     <loc>https://www.urbanek.io/categories/</loc>
-    <lastmod>2020-03-08T22:42:08-06:00</lastmod>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/tags/engineering/</loc>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/tags/fundies/</loc>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/tags/generation-loss/</loc>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/post/generation-loss-part-1/</loc>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/post/</loc>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/tags/</loc>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/categories/technology/</loc>
+    <lastmod>2020-05-11T21:42:08-06:00</lastmod>
   </url>
   
   <url>
@@ -32,11 +67,6 @@
   </url>
   
   <url>
-    <loc>https://www.urbanek.io/tags/engineering/</loc>
-    <lastmod>2020-03-08T22:42:08-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.urbanek.io/categories/humanity/</loc>
     <lastmod>2020-03-08T22:42:08-06:00</lastmod>
   </url>
@@ -47,22 +77,7 @@
   </url>
   
   <url>
-    <loc>https://www.urbanek.io/post/</loc>
-    <lastmod>2020-03-08T22:42:08-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.urbanek.io/tags/</loc>
-    <lastmod>2020-03-08T22:42:08-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.urbanek.io/post/engineering-culture-use-precise-language/</loc>
-    <lastmod>2020-02-16T19:42:08-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.urbanek.io/categories/technology/</loc>
     <lastmod>2020-02-16T19:42:08-06:00</lastmod>
   </url>
   
@@ -79,11 +94,6 @@
   <url>
     <loc>https://www.urbanek.io/tags/excel/</loc>
     <lastmod>2020-02-04T12:25:40-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.urbanek.io/tags/fundies/</loc>
-    <lastmod>2020-01-30T23:14:48-06:00</lastmod>
   </url>
   
   <url>

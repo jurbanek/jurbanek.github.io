@@ -5,10 +5,21 @@
     <link>https://www.urbanek.io/tags/fundies/</link>
     <description>Recent content in fundies on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Jan 2020 23:14:48 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 21:42:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/tags/fundies/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generation Loss — Part 1</title>
+      <link>https://www.urbanek.io/post/generation-loss-part-1/</link>
+      <pubDate>Mon, 11 May 2020 21:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/generation-loss-part-1/</guid>
+      <description>Two Techies Walk into a Bar One has their credentials revoked
+Some time ago, prior to the COVID-19 social-distancing and safer-at-home orders, I was enjoying a beer with a fellow technology professional when something was said which caused my eyes to squint, head reposition, and settle in to a profoundly dumbfounded gaze:
+ &amp;ldquo;&amp;hellip;kind of like when you copy a file and the copied data is not exact&amp;hellip;&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>Interview Fundies: Longest Prefix Match</title>

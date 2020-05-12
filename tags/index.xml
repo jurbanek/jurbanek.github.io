@@ -5,10 +5,37 @@
     <link>https://www.urbanek.io/tags/</link>
     <description>Recent content in Tags on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 08 Mar 2020 22:42:08 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 21:42:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>engineering</title>
+      <link>https://www.urbanek.io/tags/engineering/</link>
+      <pubDate>Mon, 11 May 2020 21:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/tags/engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fundies</title>
+      <link>https://www.urbanek.io/tags/fundies/</link>
+      <pubDate>Mon, 11 May 2020 21:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/tags/fundies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>generation loss</title>
+      <link>https://www.urbanek.io/tags/generation-loss/</link>
+      <pubDate>Mon, 11 May 2020 21:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/tags/generation-loss/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cautionary tale</title>
@@ -25,15 +52,6 @@
       <pubDate>Sun, 08 Mar 2020 22:42:08 -0600</pubDate>
       
       <guid>https://www.urbanek.io/tags/culture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>engineering</title>
-      <link>https://www.urbanek.io/tags/engineering/</link>
-      <pubDate>Sun, 08 Mar 2020 22:42:08 -0600</pubDate>
-      
-      <guid>https://www.urbanek.io/tags/engineering/</guid>
       <description></description>
     </item>
     
@@ -61,15 +79,6 @@
       <pubDate>Tue, 04 Feb 2020 12:25:40 -0600</pubDate>
       
       <guid>https://www.urbanek.io/tags/excel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fundies</title>
-      <link>https://www.urbanek.io/tags/fundies/</link>
-      <pubDate>Thu, 30 Jan 2020 23:14:48 -0600</pubDate>
-      
-      <guid>https://www.urbanek.io/tags/fundies/</guid>
       <description></description>
     </item>
     
