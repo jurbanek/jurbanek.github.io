@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Nature&#39;s Xerox Effect'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Generation Loss — Part 2 • Urbanek.io'>
+<meta property='og:description' content='Nature&#39;s Xerox Effect'>
+<meta property='og:url' content='https://www.urbanek.io/post/generation-loss-part-2/'>
+<meta property='og:site_name' content='Urbanek.io'>
+<meta property='og:type' content='article'><meta property='article:section' content='post'><meta property='article:tag' content='engineering'><meta property='article:tag' content='fundies'><meta property='article:tag' content='generation loss'><meta property='article:published_time' content='2020-05-22T22:15:08-06:00'/><meta property='article:modified_time' content='2020-05-22T22:15:08-06:00'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.69.2" />
+
+  <title>Generation Loss — Part 2 • Urbanek.io</title>
+  <link rel='canonical' href='https://www.urbanek.io/post/generation-loss-part-2/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.6a060eb7.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-166720177-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+</head>
+<body class='page type-post has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      Urbanek.io
+      </a>
+    </h2>
+    <div class='desc'>
+    At the interstice of technology and humanity
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/categories/technology/'>Technology</a></li><li class='item'>
+  <a href='/categories/humanity/'>Humanity</a></li><li class='item'>
+  <a href='/about/'>About</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/cautionary-tale/' style='font-size:1em'>cautionary tale</a>
+      </li><li>
+        <a href='/tags/cisco/' style='font-size:1em'>cisco</a>
+      </li><li>
+        <a href='/tags/culture/' style='font-size:1.3333333333333333em'>culture</a>
+      </li><li>
+        <a href='/tags/efficiency/' style='font-size:1em'>efficiency</a>
+      </li><li>
+        <a href='/tags/engineering/' style='font-size:2em'>engineering</a>
+      </li><li>
+        <a href='/tags/excel/' style='font-size:1em'>excel</a>
+      </li><li>
+        <a href='/tags/firepower/' style='font-size:1em'>firepower</a>
+      </li><li>
+        <a href='/tags/fundies/' style='font-size:1.6666666666666665em'>fundies</a>
+      </li><li>
+        <a href='/tags/generation-loss/' style='font-size:1.3333333333333333em'>generation loss</a>
+      </li><li>
+        <a href='/tags/interview/' style='font-size:1em'>interview</a>
+      </li><li>
+        <a href='/tags/language/' style='font-size:1.3333333333333333em'>language</a>
+      </li><li>
+        <a href='/tags/network/' style='font-size:1em'>network</a>
+      </li><li>
+        <a href='/tags/powershell/' style='font-size:1em'>powershell</a>
+      </li><li>
+        <a href='/tags/route/' style='font-size:1em'>route</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Urbanek.io</p><p class='desc site-desc'>At the interstice of technology and humanity</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Generation Loss — Part 2</h1>
+      
+<p class='desc'>Nature&#39;s Xerox Effect</p>
+
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2020-05-22T22:15:08-06:00'>2020, May 22</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+8 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+<figure>
+   <a href="#ca7fc3e98da1d906fa1b56abf912372b-lightbox">
+      <img src="Turntable.jpg"
+            alt="Turntable" width="600" class="shadow"/> 
+   </a>
+</figure>
+<a href="#_" class="lightbox" id="ca7fc3e98da1d906fa1b56abf912372b-lightbox">
+   <img src="Turntable.jpg" alt="Turntable" >
+</a>
+<ul>
+<li><a href="https://www.urbanek.io/post/generation-loss-part-1/">Generation Loss — Part 1</a></li>
+<li><a href="https://www.urbanek.io/post/generation-loss-part-2/">Generation Loss — Part 2</a></li>
+</ul>
+<h2 id="digital-or-analog">Digital or Analog</h2>
+<blockquote>
+<p>How would you explain the differences between analog and digital systems to another <em>engineer</em>?</p>
+</blockquote>
+<p><em>Digital</em> means <em>0&rsquo;s and 1&rsquo;s</em>, right? Perhaps to the layperson, but there is far more to the story. Most helpful to think about how information is represented, moved around, and stored.</p>
+<p>Generally:</p>
+<ul>
+<li>When representing the <em>physical world</em>, <strong>analog systems</strong> <em><strong>try</strong></em> (unsuccessfully) to be exact representations of a source phenomenon by mimicking without [much] manipulation in the middle. The concept of <strong>generation loss</strong> <em>prevents</em> an analog system from mimicking <em>exactly</em>.</li>
+<li>When representing the <em>physical world</em>, <strong>digital systems</strong> also <em><strong>try</strong></em> (unsuccessfully) to be exact representations of a source phenomenon. To interact with the physical world, digital systems require analog systems which impart generation loss.</li>
+<li><strong>The big deal, however, is once the information (representation of source phenomenon) is &ldquo;in&rdquo; a digital system, the information can be <em>manipulated</em> (including very complex manipulations), <em>replicated</em> (exactly if needed), and <em>transmitted</em> and <em>stored</em> in ways with improved immunity to noise and deterioration/corruption.</strong></li>
+</ul>
+<h3 id="rewind-analog">Rewind: Analog</h3>
+<p>To begin, when reading or hearing the word <strong>analog</strong>, replace it mentally with <strong>analogy</strong> or <strong>analogous</strong>. An analogy in literature compares two otherwise unlike things by finding commonality between the things, be it literal (exact), figurative, conceptual, or physical. A heart compared to a pump or an author&rsquo;s pen to a warrior&rsquo;s sword.</p>
+<p>In analog <em>systems</em>, the <em>analogy</em> is far more <em>literal</em> (and not figurative). Take a phonograph record (a music &ldquo;record&rdquo;) for example, whose &ldquo;grooves&rdquo; are directly <em>analogous</em> to the physical pressure waveform at the time of the recording. Sound is a pressure wave, whether generated by voices, store bought speakers, or a jetliner. <em>The recording needle cutting pattern is vibrating analogously with the physical pressure waveform present &ldquo;in the recording room.&quot;</em></p>
+<p>On <em>playback</em>, the created pressure waveform (sound we hear) is analogous to the vibrations of a playback needle being tossed around in the earlier recorded/cut &ldquo;grooves.&rdquo;</p>
+<ul>
+<li>A physical intermediary during <strong>recording</strong> is a diaphragm that is able to vibrate, called a <em>microphone</em>.</li>
+<li>A physical intermediary during <strong>playback</strong> is a diaphragm that is able to vibrate, called a <em>speaker</em>.</li>
+</ul>
+<h3 id="generation-loss">Generation Loss</h3>
+<p>In the phonograph recording example, the original recording&rsquo;s cut grooves are <strong>not</strong> <em><strong>perfectly</strong></em> analogous to the original pressure waveform. Both the vibrating diaphragm and the cutting needle on the recording media create friction, lose energy as heat, are subject to attenuation, and in process introduce <em>minor</em> imperfections (called &ldquo;noise&rdquo;) to the &ldquo;analogousness&rdquo; of the result. These imperfections are stored, propagated on playback, and <em>new</em> imperfections are introduced every time the record is played. Generally, the imperfections are subtle or beyond human perceptive threshold.</p>
+<ul>
+<li>When playing a phonograph record, the <em>original</em> recording imperfections are captured in the grooves to be played back every time. New imperfections are added during playback. The <em>added-on-playback</em> imperfections may or may not be noticed by listeners and are then generally lost to the ether since they are not recorded <em>again</em>.</li>
+<li>Interestingly, the phonograph record <em>media</em> (vinyl, shellac) tends to wear out from use — akin to modern-era <em>bit rot</em>. A worn phonograph is technically reduced signal and not noise, per se. However, the result effect is the same — a lower signal to noise ratio.</li>
+</ul>
+
+<figure>
+   <a href="#c2d23d5348b046473179556c5b9b3f78-lightbox">
+      <img src="AnalogGenerationLoss.png"
+            alt="Image: Analog Generation Loss" width="600" class="shadow"/> 
+   </a><figcaption>
+         <p>Image: Analog Generation Loss</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="c2d23d5348b046473179556c5b9b3f78-lightbox">
+   <img src="AnalogGenerationLoss.png" alt="Image: Analog Generation Loss" >
+</a>
+<p>Imagine a rather silly scenario (image above) where the original pressure waveform (sound) is <strong>not</strong> cut into a phonograph record immediately, but instead regenerated using [analog] vibrating diaphragms (microphones and speakers), <em>several times</em>, before being cut into the phonograph record. When taken to such an extreme it isn&rsquo;t hard to imagine the propagation of every analog-derived imperfection and introduction of new analog-derived imperfections at every step (forms of generation loss) eventually leading to a human perceptible degradation.</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/nqy_hYDI0As" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+YouTube: A different, but conceptually similar example with VHS video and audio where analogous <em>magnetic field strength</em> takes the place of <em>grooves</em></p>
+<h3 id="fast-forward-digitize--sample--quantize">Fast Forward: Digitize — Sample &amp; Quantize</h3>
+<p>To appreciate how a digital system <em>can</em> avoid generation loss, it is important to understand sampling and quantizing, colloquially called &ldquo;digitizing.&rdquo;</p>
+<p>To represent the physical world <em>sound</em> (for example) in an <strong>analog system</strong>, the pressure waveform is <em>stored</em> as an analogous groove on a piece of circular plastic (record). The groove is cut by a needle and vibrating diaphragm that is being told what to do by the pressure waveform, without much &ldquo;stuff&rdquo; in between.</p>
+<p>To represent the physical world <em>sound</em> in a <strong>digital system</strong>, continue to <em>store</em> the pressure wave as a groove on a piece of circular plastic (can still be a record, go with it despite more modern technology). <em>However</em>, the groove is <strong>not</strong> <em>analogous</em> to the pressure wave. <strong>In an <em>intermediate step</em>, the pressure wave is sampled and <a href="https://en.wikipedia.org/wiki/Quantization_(signal_processing)">quantized</a> first by some middleware (hardware, firmware, and even software), which results in a stream of numerical values that <em>represent</em> the pressure wave.</strong></p>
+<blockquote>
+<p><em><strong>Sampling and quantizing</strong></em>, <em><strong>digitizing</strong></em>, and <em><strong>analog-to-digital conversion</strong></em> are different terms describing similar concepts.</p>
+</blockquote>
+
+<figure>
+   <a href="#c68422f9a1b60822b355f2ae90db2a35-lightbox">
+      <img src="4BitQuantization.png"
+            alt="Image: Quantization with 4-bit depth" width="600" class="shadow"/> 
+   </a><figcaption>
+         <p>Image: Quantization with 4-bit depth</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="c68422f9a1b60822b355f2ae90db2a35-lightbox">
+   <img src="4BitQuantization.png" alt="Image: Quantization with 4-bit depth" >
+</a>
+<p>The numerical values from sampling and quantizing are then framed and serialized (organized in a specific way) and cut into a groove according to specific rules defined by the creators of the system. Rules vary, but almost all systems ultimately store the sampled and quantized values as bits (binary digits) on the storage medium.</p>
+<p>Oversimplified but illustrative: using the 4-bit quantization example above, the first three samples 8 — 9 — 11 could be stored as the bitstream 1000<sub>2</sub> — 1001<sub>2</sub> — 1011<sub>2</sub>. It is very possible to store such a bitstream on a phonograph record, similar to how a bitstream would be stored on a &ldquo;digital&rdquo; compact disc — a digital phonograph record, imagine&hellip;</p>
+
+<figure>
+   <a href="#27d9be6e0a0d8a28bd5a51f5385ac077-lightbox">
+      <img src="Analog-Digital%20Example.png"
+            alt="Image: Sampled and quantized, visually compared. In reality, both analog and digital representations are inexact to the original physical world (despite how image may look)." width="600" class="shadow"/> 
+   </a><figcaption>
+         <p>Image: Sampled and quantized, visually compared. In reality, both analog and digital representations are inexact to the original physical world (despite how image may look).</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="27d9be6e0a0d8a28bd5a51f5385ac077-lightbox">
+   <img src="Analog-Digital%20Example.png" alt="Image: Sampled and quantized, visually compared. In reality, both analog and digital representations are inexact to the original physical world (despite how image may look)." >
+</a>
+<p>Analog information and digital information can both be stored in grooves, in magnetic fields, and other mediums. The difference is how the impact on the physical medium is interpreted.</p>
+<p>Imagine the same sound stored analogously and digitally:</p>
+<ul>
+<li>Analog information is analogous to the impact on the physical medium — the groove varies analogously with the pressure wave.</li>
+<li>Digital information (binary digits — bits) is <em>coded</em> into the physical medium as a sequence of exact on/off states representing the bitstream. If the information source came from the physical world, the bitstream itself is a sampled and quantized representation of the physical world.</li>
+</ul>
+<h3 id="generate-without-loss">Generate without Loss</h3>
+<p>Within the quantized (&ldquo;digital&rdquo;) world, it is <em>possible</em> to create another exact copy of the quantized data. Read a value, write a value, repeat.</p>
+<p>Consider being asked to 1) copy numbers on a piece of paper and 2) copy a sinusoidal waveform on a piece of paper.</p>
+<p><strong>If asked to <em>exactly</em> copy the numbers 127, 14, 85 you&rsquo;d write 1 - 2 - 7, then 1 - 4, then 8 - 5 and be done. These are already sampled exact quantities, with little room for interpretation beyond visually decoding the numbers and writing them down again. Anyone with the basic ability to comprehend numbers can interpret your copied 127, 14, and 85 — <em>exactly</em>.</strong></p>
+<p><strong>Whereas being asked to <em>exactly</em> copy the image of a sinusoidal waveform, exact curves and all, comes with a bit more challenge. Are your lines curving at the exact same rate, same amplitude, same pencil thickness? If you are following along thus far, it is impossible to copy/replicate such a waveform <em>exactly</em> due to generation loss — in this case with much of the generation loss being owed to your own human physiology.</strong></p>
+<p><strong>The <em>abstraction</em> from digitizing allows us to copy/replicate exactly <em>within</em> the digital system.</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">Thing</th>
+<th align="center">Generation Loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">analog-to-analog conversion</td>
+<td align="center">always</td>
+</tr>
+<tr>
+<td align="center">analog-to-digital conversion</td>
+<td align="center">always</td>
+</tr>
+<tr>
+<td align="center">analog-to-analog replication</td>
+<td align="center">always</td>
+</tr>
+<tr>
+<td align="center">digital-to-analog conversion</td>
+<td align="center">always</td>
+</tr>
+<tr>
+<td align="center">digital-to-digital conversion</td>
+<td align="center">always<sub>1</sub></td>
+</tr>
+<tr>
+<td align="center">digital-to-digital replication</td>
+<td align="center">sometimes<sub>2</sub></td>
+</tr>
+</tbody>
+</table>
+<small>
+<ol>
+<li>compression, transcoding, re-encoding, resampling always introduce generation loss</li>
+<li>generation loss can be avoided with specific design and implementation</li>
+</ol>
+</small>
+<h3 id="still-subject-to-deteriorationcorruption">Still Subject to Deterioration/Corruption</h3>
+<p>Digitizing alone does not guarantee exact replication, it only makes it possible. Nor does digitizing eliminate deterioration/corruption, it only makes it easier to design and implement recovery systems. Quantized information stored in the physical world (CD/DVD/BD, memory, disk drive, in transit on a wire) is certainly subject to environmental factors that affect the medium, signal, or noise in adverse ways.</p>
+<ul>
+<li>Extreme and obvious examples of folding a CD in half or putting it in the microwave for a few seconds (a fun experiment) will deteriorate/corrupt much of the medium. It&rsquo;s a good thing we have an exact copy (<em>touché</em>) of the bitstream on another medium.</li>
+<li>Less obvious deterioration/corruption can occur within digital systems due to a <a href="https://en.wikipedia.org/wiki/Failure_of_electronic_components">variety of means</a> including <a href="https://www.backblaze.com/b2/hard-drive-test-data.html">wear and tear on mechanicals</a>, dielectric breakdown, and even radiation (be it from human invention or the <a href="https://science.slashdot.org/story/17/02/19/2330251/serious-computer-glitches-can-be-caused-by-cosmic-rays">cosmos</a>).</li>
+</ul>
+<p>Both obvious and less obvious sources of deterioration/corruption have led to numerous mitigation strategies within digital systems from basic backups (exact copies) to simple erasure codes (like &ldquo;parity&rdquo; in some RAID modes) to more advanced <a href="https://en.wikipedia.org/wiki/Erasure_code">erasure codes</a> / <a href="https://en.wikipedia.org/wiki/Error_correction_code">error correction codes (ECC)</a>. <strong>Anti-deterioration/anti-corruption/recovery mitigations store additional quantities of information (from a little to a lot), with additional computational overhead, to recover from certain types of deterioration/corruption. Such recovery is considered more difficult in analog-only systems.</strong></p>
+<h3 id="full-circle">Full Circle</h3>
+<p>To bring us full-circle — started with a comment in a bar from <a href="https://www.urbanek.io/post/generation-loss-part-1/">Generation Loss — Part 1</a>:</p>
+<blockquote>
+<p>&ldquo;&hellip;kind of like when you copy a file and the copied data is not exact&hellip;&rdquo;</p>
+</blockquote>
+<p>Computer file system copy operations operate on bitstreams — it <strong>is</strong> possible to copy/replicate a bitstream <em>exactly</em>. File systems and underlying hardware also implement various deterioration/corruption mitigation techniques — perhaps a future topic.</p>
+<p>Time for a beer.</p>
+
+<figure>
+   <a href="#776bdea2377ee8c5046127801ec15ec6-lightbox">
+      <img src="DigitalPour.png"
+            alt="Digital Pour" width="200"/> 
+   </a>
+</figure>
+<a href="#_" class="lightbox" id="776bdea2377ee8c5046127801ec15ec6-lightbox">
+   <img src="DigitalPour.png" alt="Digital Pour" >
+</a>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/technology/'>technology</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/engineering/'>engineering</a>, <a class='tag' href='/tags/fundies/'>fundies</a>, <a class='tag' href='/tags/generation-loss/'>generation loss</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/post/generation-loss-part-1/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Generation Loss — Part 1</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/jurbanek' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/jurbanek' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2017-2020 John Urbanek </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

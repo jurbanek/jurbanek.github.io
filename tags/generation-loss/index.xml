@@ -5,10 +5,22 @@
     <link>https://www.urbanek.io/tags/generation-loss/</link>
     <description>Recent content in generation loss on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 May 2020 21:42:08 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 22:15:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/tags/generation-loss/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generation Loss — Part 2</title>
+      <link>https://www.urbanek.io/post/generation-loss-part-2/</link>
+      <pubDate>Fri, 22 May 2020 22:15:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/generation-loss-part-2/</guid>
+      <description>Generation Loss — Part 1 Generation Loss — Part 2  Digital or Analog  How would you explain the differences between analog and digital systems to another engineer?
+ Digital means 0&amp;rsquo;s and 1&amp;rsquo;s, right? Perhaps to the layperson, but there is far more to the story. Most helpful to think about how information is represented, moved around, and stored.
+Generally:
+ When representing the physical world, analog systems try (unsuccessfully) to be exact representations of a source phenomenon by mimicking without [much] manipulation in the middle.</description>
+    </item>
     
     <item>
       <title>Generation Loss — Part 1</title>
@@ -16,7 +28,7 @@
       <pubDate>Mon, 11 May 2020 21:42:08 -0600</pubDate>
       
       <guid>https://www.urbanek.io/post/generation-loss-part-1/</guid>
-      <description>Two Techies Walk into a Bar One has their credentials revoked
+      <description>Generation Loss — Part 1 Generation Loss — Part 2  Two Techies Walk into a Bar One has their credentials revoked
 Some time ago, prior to the COVID-19 social-distancing and safer-at-home orders, I was enjoying a beer with a fellow technology professional when something was said which caused my eyes to squint, head reposition, and settle in to a profoundly dumbfounded gaze:
  &amp;ldquo;&amp;hellip;kind of like when you copy a file and the copied data is not exact&amp;hellip;&amp;rdquo;</description>
     </item>
