@@ -5,10 +5,19 @@
     <link>https://www.urbanek.io/tags/</link>
     <description>Recent content in Tags on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 May 2020 22:15:08 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 15:01:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo</title>
+      <link>https://www.urbanek.io/tags/hugo/</link>
+      <pubDate>Tue, 26 May 2020 15:01:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/tags/hugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>engineering</title>

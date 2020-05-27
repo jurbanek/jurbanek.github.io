@@ -5,10 +5,20 @@
     <link>https://www.urbanek.io/categories/technology/</link>
     <description>Recent content in technology on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 May 2020 22:15:08 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 15:01:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo — Lightbox Shortcode</title>
+      <link>https://www.urbanek.io/post/hugo-lightbox-shortcode/</link>
+      <pubDate>Tue, 26 May 2020 15:01:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/hugo-lightbox-shortcode/</guid>
+      <description>What A pure CSS lightbox — no JavaScript, turned into a Hugo {{&amp;lt; figure-lightbox &amp;gt;}} shortcode suitable to be used anywhere the built-in {{&amp;lt; figure &amp;gt;}} shortcode would be used.
+Hugobiographical name1 Victor (-Marie) 1802-1885 French poet, novelist, and dramatist2 open-source static website generator written in Golanglightboxnoun1 JavaScript library by Lokesh Dhakar to display images and videos by filling the screen, and dimming the rest of the page2 any technique to display images and videos by filling the screen, and dimming the rest of the page, named in homage to the original JavaScript libraryshortcodenoun1 mini-templates (snippets) of code and markup that can be called within Hugo content files, commonly to augment the limitations of native MarkdownSeeing is Believing  &amp;lt;profound Yoda quote — violate subject-verb-object order, it will&amp;gt;</description>
+    </item>
     
     <item>
       <title>Generation Loss — Part 2</title>

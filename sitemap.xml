@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://www.urbanek.io/</loc>
-    <lastmod>2020-05-22T22:15:08-06:00</lastmod>
+    <lastmod>2020-05-26T15:01:08-06:00</lastmod>
   </url>
   
   <url>
@@ -13,7 +13,32 @@
   
   <url>
     <loc>https://www.urbanek.io/categories/</loc>
-    <lastmod>2020-05-22T22:15:08-06:00</lastmod>
+    <lastmod>2020-05-26T15:01:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/tags/hugo/</loc>
+    <lastmod>2020-05-26T15:01:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/post/hugo-lightbox-shortcode/</loc>
+    <lastmod>2020-05-26T15:01:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/post/</loc>
+    <lastmod>2020-05-26T15:01:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/tags/</loc>
+    <lastmod>2020-05-26T15:01:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.urbanek.io/categories/technology/</loc>
+    <lastmod>2020-05-26T15:01:08-06:00</lastmod>
   </url>
   
   <url>
@@ -33,21 +58,6 @@
   
   <url>
     <loc>https://www.urbanek.io/post/generation-loss-part-2/</loc>
-    <lastmod>2020-05-22T22:15:08-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.urbanek.io/post/</loc>
-    <lastmod>2020-05-22T22:15:08-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.urbanek.io/tags/</loc>
-    <lastmod>2020-05-22T22:15:08-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.urbanek.io/categories/technology/</loc>
     <lastmod>2020-05-22T22:15:08-06:00</lastmod>
   </url>
   
