@@ -5,10 +5,28 @@
     <link>https://www.urbanek.io/tags/</link>
     <description>Recent content in Tags on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 26 May 2020 15:01:08 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jan 2021 15:01:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>powershell</title>
+      <link>https://www.urbanek.io/tags/powershell/</link>
+      <pubDate>Fri, 22 Jan 2021 15:01:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>subaru</title>
+      <link>https://www.urbanek.io/tags/subaru/</link>
+      <pubDate>Fri, 22 Jan 2021 15:01:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/tags/subaru/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>hugo</title>
@@ -43,15 +61,6 @@
       <pubDate>Fri, 22 May 2020 22:15:08 -0600</pubDate>
       
       <guid>https://www.urbanek.io/tags/generation-loss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>powershell</title>
-      <link>https://www.urbanek.io/tags/powershell/</link>
-      <pubDate>Mon, 11 May 2020 21:42:08 -0600</pubDate>
-      
-      <guid>https://www.urbanek.io/tags/powershell/</guid>
       <description></description>
     </item>
     

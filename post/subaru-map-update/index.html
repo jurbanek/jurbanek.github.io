@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='It shouldn&#39;t be this hard...'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='2019 Subaru Outback Map Update • Urbanek.io'>
+<meta property='og:description' content='It shouldn&#39;t be this hard...'>
+<meta property='og:url' content='https://www.urbanek.io/post/subaru-map-update/'>
+<meta property='og:site_name' content='Urbanek.io'>
+<meta property='og:type' content='article'><meta property='article:section' content='post'><meta property='article:tag' content='subaru'><meta property='article:tag' content='powershell'><meta property='article:published_time' content='2021-01-22T15:01:08-06:00'/><meta property='article:modified_time' content='2021-01-22T15:01:08-06:00'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.69.2" />
+
+  <title>2019 Subaru Outback Map Update • Urbanek.io</title>
+  <link rel='canonical' href='https://www.urbanek.io/post/subaru-map-update/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.6a060eb7.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-166720177-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+</head>
+<body class='page type-post has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      Urbanek.io
+      </a>
+    </h2>
+    <div class='desc'>
+    At the interstice of technology and humanity
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/categories/technology/'>Technology</a></li><li class='item'>
+  <a href='/categories/humanity/'>Humanity</a></li><li class='item'>
+  <a href='/about/'>About</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/cautionary-tale/' style='font-size:1em'>cautionary tale</a>
+      </li><li>
+        <a href='/tags/cisco/' style='font-size:1em'>cisco</a>
+      </li><li>
+        <a href='/tags/culture/' style='font-size:1.3333333333333333em'>culture</a>
+      </li><li>
+        <a href='/tags/efficiency/' style='font-size:1em'>efficiency</a>
+      </li><li>
+        <a href='/tags/engineering/' style='font-size:2em'>engineering</a>
+      </li><li>
+        <a href='/tags/excel/' style='font-size:1em'>excel</a>
+      </li><li>
+        <a href='/tags/firepower/' style='font-size:1em'>firepower</a>
+      </li><li>
+        <a href='/tags/fundies/' style='font-size:1.6666666666666665em'>fundies</a>
+      </li><li>
+        <a href='/tags/generation-loss/' style='font-size:1.3333333333333333em'>generation loss</a>
+      </li><li>
+        <a href='/tags/hugo/' style='font-size:1em'>hugo</a>
+      </li><li>
+        <a href='/tags/interview/' style='font-size:1em'>interview</a>
+      </li><li>
+        <a href='/tags/language/' style='font-size:1.3333333333333333em'>language</a>
+      </li><li>
+        <a href='/tags/network/' style='font-size:1em'>network</a>
+      </li><li>
+        <a href='/tags/powershell/' style='font-size:1.3333333333333333em'>powershell</a>
+      </li><li>
+        <a href='/tags/route/' style='font-size:1em'>route</a>
+      </li><li>
+        <a href='/tags/subaru/' style='font-size:1em'>subaru</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Urbanek.io</p><p class='desc site-desc'>At the interstice of technology and humanity</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>2019 Subaru Outback Map Update</h1>
+      
+<p class='desc'>It shouldn&#39;t be this hard...</p>
+
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2021-01-22T15:01:08-06:00'>2021, Jan 22</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+3 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+<figure>
+   <a href="#22f6bb71fbff7f4105ff012d69baa2e2-lightbox">
+      <img src="2019-subaru-outback-touring.png"
+            alt="2019 Subaru Outback Touring Edition" width="600"/> 
+   </a>
+</figure>
+<a href="#_" class="lightbox" id="22f6bb71fbff7f4105ff012d69baa2e2-lightbox">
+   <img src="2019-subaru-outback-touring.png" alt="2019 Subaru Outback Touring Edition" >
+</a>
+<h2 id="tldr">tl;dr</h2>
+<ol>
+<li><strong>Download</strong> files using <em>Map Downloader</em> tool available at <a href="https://subaru-maps.com">Subaru-Maps</a>. Do <strong>not</strong> write the image to removable media using the tool, just download the update.
+<ul>
+<li><code>.chunk</code> files are placed in <code>C:\Users\&lt;user&gt;\Map Downloader\&lt;random&gt;</code></li>
+</ul>
+</li>
+<li><strong>Merge</strong> and <strong>extract</strong> <code>.chunk</code> files using <a href="https://github.com/jurbanek/kitchensink/blob/master/Expand-MapDownloadData.ps1">Expand-MapDownloadData</a> PowerShell function
+<ul>
+<li><code>PS&gt; . .\Expand-MapdownloadData.ps1 #dot-source defined function into PowerShell session</code></li>
+<li><code>PS&gt; Expand-MapDownloadData -InputPath &quot;C:\path\to\chunk&quot; -OutputPath &quot;C:\path\to\extraction\destination&quot;</code></li>
+</ul>
+</li>
+<li><strong>Copy</strong> extracted files (the <code>update</code> folder and everything inside) to root of NTFS formatted file system on removable drive</li>
+<li>With car turned off, <strong>connect</strong> USB removable drive to car USB port, then <strong>start</strong> car.</li>
+<li><strong>Wait</strong> up to 60 seconds and <strong>follow</strong> the prompts of the navigation system.</li>
+</ol>
+<h2 id="why">Why</h2>
+<p>In short, the <em>official</em> process from <a href="https://subaru-maps.com">Subaru-Maps</a> has caused <strong>too much headache</strong> (truth be told this isn&rsquo;t <em>easy</em> either, but it has worked <em>reliably</em> since 2019).</p>
+<ul>
+<li>Using flash drives of suitable size (16 GB and 32 GB SanDisk) are very slow when writing out 12+ GiB updates.</li>
+<li>Using flash drives of suitable size (16 GB and 32 GB SanDisk) resulted in more failure than success, whether during the writing process or the actual update process in the navigation system. Perhaps the flash drives I have been using are junk (but I have generally had favorable results with SanDisk).</li>
+<li>Connecting the vehicle navigation to home Wi-Fi directly and updating via Wi-Fi has limits. Specifically, the navigation Wi-Fi updater is limited to only a few user selected regions. All of North America (or even all of the United States in my case) could not be updated using the Wi-Fi mechanism. A full update requires the official tool (or this process).</li>
+<li>Using a NTFS formatted USB HDD (or SSD) sped up the 1) preparation, 2) update, and 3) increased reliability significantly.</li>
+</ul>
+<h2 id="how">How</h2>
+<h3 id="1--download">1 — Download</h3>
+<p>Install the official <em>Map Downloader</em> tool (likely already done if you are reading this) from <a href="https://subaru-maps.com">Subaru-Maps</a>. Download the update for your vehicle but do <strong>not</strong> write it to USB media using the application.</p>
+<blockquote>
+<p>If the <em>Map Downloader</em> application fails to launch with an error &ldquo;Problem contacting server. Please check your network connection.&rdquo;
+
+<figure>
+   <a href="#9d0b11382cc9b76538d40b3e59f08989-lightbox">
+      <img src="problem.png"
+            alt="Problem contacting server. Please check your network connection." width="300"/> 
+   </a>
+</figure>
+<a href="#_" class="lightbox" id="9d0b11382cc9b76538d40b3e59f08989-lightbox">
+   <img src="problem.png" alt="Problem contacting server. Please check your network connection." >
+</a>
+Download and install the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8328">Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)</a></p>
+</blockquote>
+<h3 id="2--merge--extract">2 — Merge &amp; Extract</h3>
+<p>The actual update is composed of <code>.chunk</code> files placed in <code>C:\Users\&lt;user&gt;\Map Downloader\&lt;random&gt;</code>. Locate them.</p>
+
+<figure>
+   <a href="#88d77f64c4f1c5d4cf194d632b0a2ad4-lightbox">
+      <img src="chunkfiles.png"
+            alt=".chunk files" width="300"/> 
+   </a><figcaption>
+         <p>.chunk files</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="88d77f64c4f1c5d4cf194d632b0a2ad4-lightbox">
+   <img src="chunkfiles.png" alt=".chunk files" >
+</a>
+<p>Obtain <a href="https://github.com/jurbanek/kitchensink/blob/master/Expand-MapDownloadData.ps1">Expand-MapDownloadData</a> PowerShell function, dot-source it into your PowerShell session (it is an advanced function that behaves like a PowerShell cmdlet, personal preference preferring advanced functions), and then call the advanced function with your specific <code>-InputPath</code> (<code>.chunk</code> directory) and desired <code>-OutputPath</code> (extraction directory).</p>
+
+<figure>
+   <a href="#f8e3093b52e854a16c4a30cbe96ed728-lightbox">
+      <img src="Expand-MapDownloadData-1.png"
+            alt="dot-source and call advanced function" width="750"/> 
+   </a><figcaption>
+         <p>dot-source (note the <em>extra</em> dot) and call advanced function</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="f8e3093b52e854a16c4a30cbe96ed728-lightbox">
+   <img src="Expand-MapDownloadData-1.png" alt="dot-source and call advanced function" >
+</a>
+
+<figure>
+   <a href="#7f1bb9a47d194f0644eb193deb77e9b2-lightbox">
+      <img src="Expand-MapDownloadData-2.png"
+            alt="Merging the chunks" width="750"/> 
+   </a><figcaption>
+         <p>Merging the chunks</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="7f1bb9a47d194f0644eb193deb77e9b2-lightbox">
+   <img src="Expand-MapDownloadData-2.png" alt="Merging the chunks" >
+</a>
+
+<figure>
+   <a href="#04734ed80719cc912986a513a1995f92-lightbox">
+      <img src="Expand-MapDownloadData-3.png"
+            alt="Extracting the contents" width="750"/> 
+   </a><figcaption>
+         <p>Extracting the contents</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="04734ed80719cc912986a513a1995f92-lightbox">
+   <img src="Expand-MapDownloadData-3.png" alt="Extracting the contents" >
+</a>
+<p>When finished processing, the <code>MergedChunks.zip</code> and <code>update</code> folder should live in the chosen <code>-OutputPath</code>. The <code>update</code> folder is the actual contents the Subaru navigation system needs to perform its magic.</p>
+
+<figure>
+   <a href="#d041395ec9d21f5511fff732d7fddbae-lightbox">
+      <img src="mergedprocessed.png"
+            alt="Results of the merge and extraction" width="450"/> 
+   </a><figcaption>
+         <p>Results of the merge and extraction</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="d041395ec9d21f5511fff732d7fddbae-lightbox">
+   <img src="mergedprocessed.png" alt="Results of the merge and extraction" >
+</a>
+<h3 id="3--copy">3 — Copy</h3>
+<p>Copy the extracted contents (the <code>update</code> folder itself) to the root of a NTFS formatted external/removable <strong>HDD</strong> or <strong>SSD</strong>.</p>
+
+<figure>
+   <a href="#19d597107b7c276eff8a66923af5e7cd-lightbox">
+      <img src="removable-media-structure.png"
+            alt="Extracted contents on root of removable media" width="300"/> 
+   </a><figcaption>
+         <p>Extracted contents on root of removable media</p>
+      </figcaption>
+</figure>
+<a href="#_" class="lightbox" id="19d597107b7c276eff8a66923af5e7cd-lightbox">
+   <img src="removable-media-structure.png" alt="Extracted contents on root of removable media" >
+</a>
+<h3 id="4--connect--start">4 — Connect &amp; Start</h3>
+<p>With car turned off, <strong>connect</strong> removable HDD/SSD to car USB port, then <strong>start</strong> car.</p>
+<blockquote>
+<p>If your vehicle is in an enclosed space (garage), please make sure to open the garage door for fresh air.</p>
+</blockquote>
+<h3 id="5---wait--follow">5 —  Wait &amp; Follow</h3>
+<p><strong>Wait</strong> up to 60 seconds and <strong>follow</strong> the prompts of the navigation system. After starting, the update can take anywhere from 20 - 60 minutes. Leave the vehicle running (garage door open) throughout the process. The navigation system will reboot automatically after completion.</p>
+<p>Rejoice. It shouldn&rsquo;t be this hard.</p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/technology/'>technology</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/subaru/'>subaru</a>, <a class='tag' href='/tags/powershell/'>powershell</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/post/hugo-lightbox-shortcode/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Hugo — Lightbox Shortcode</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/jurbanek' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/jurbanek' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2017-2021 John Urbanek </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

@@ -5,10 +5,19 @@
     <link>https://www.urbanek.io/post/</link>
     <description>Recent content in Posts on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 26 May 2020 15:01:08 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jan 2021 15:01:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019 Subaru Outback Map Update</title>
+      <link>https://www.urbanek.io/post/subaru-map-update/</link>
+      <pubDate>Fri, 22 Jan 2021 15:01:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/subaru-map-update/</guid>
+      <description>tl;dr  Download files using Map Downloader tool available at Subaru-Maps. Do not write the image to removable media using the tool, just download the update.  .chunk files are placed in C:\Users\&amp;lt;user&amp;gt;\Map Downloader\&amp;lt;random&amp;gt;   Merge and extract .chunk files using Expand-MapDownloadData PowerShell function  PS&amp;gt; . .\Expand-MapdownloadData.ps1 #dot-source defined function into PowerShell session PS&amp;gt; Expand-MapDownloadData -InputPath &amp;quot;C:\path\to\chunk&amp;quot; -OutputPath &amp;quot;C:\path\to\extraction\destination&amp;quot;   Copy extracted files (the update folder and everything inside) to root of NTFS formatted file system on removable drive With car turned off, connect USB removable drive to car USB port, then start car.</description>
+    </item>
     
     <item>
       <title>Hugo — Lightbox Shortcode</title>
