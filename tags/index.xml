@@ -5,10 +5,28 @@
     <link>https://www.urbanek.io/tags/</link>
     <description>Recent content in Tags on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 Jan 2021 15:01:08 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 14 Mar 2022 18:04:59 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>culture</title>
+      <link>https://www.urbanek.io/tags/culture/</link>
+      <pubDate>Mon, 14 Mar 2022 18:04:59 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/tags/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>engineering</title>
+      <link>https://www.urbanek.io/tags/engineering/</link>
+      <pubDate>Mon, 14 Mar 2022 18:04:59 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/tags/engineering/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>powershell</title>
@@ -38,15 +56,6 @@
     </item>
     
     <item>
-      <title>engineering</title>
-      <link>https://www.urbanek.io/tags/engineering/</link>
-      <pubDate>Fri, 22 May 2020 22:15:08 -0600</pubDate>
-      
-      <guid>https://www.urbanek.io/tags/engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>fundies</title>
       <link>https://www.urbanek.io/tags/fundies/</link>
       <pubDate>Fri, 22 May 2020 22:15:08 -0600</pubDate>
@@ -70,15 +79,6 @@
       <pubDate>Sun, 08 Mar 2020 22:42:08 -0600</pubDate>
       
       <guid>https://www.urbanek.io/tags/cautionary-tale/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>culture</title>
-      <link>https://www.urbanek.io/tags/culture/</link>
-      <pubDate>Sun, 08 Mar 2020 22:42:08 -0600</pubDate>
-      
-      <guid>https://www.urbanek.io/tags/culture/</guid>
       <description></description>
     </item>
     
