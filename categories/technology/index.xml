@@ -5,10 +5,20 @@
     <link>https://www.urbanek.io/categories/technology/</link>
     <description>Recent content in technology on Urbanek.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Mar 2022 18:04:59 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 15 Sep 2022 09:42:08 -0600</lastBuildDate>
     
 	<atom:link href="https://www.urbanek.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows 10/11 Hyper-V Default Network IP Address Keeps Changing</title>
+      <link>https://www.urbanek.io/post/fix-hyperv-network/</link>
+      <pubDate>Thu, 15 Sep 2022 09:42:08 -0600</pubDate>
+      
+      <guid>https://www.urbanek.io/post/fix-hyperv-network/</guid>
+      <description>Microsoft Hyper-V is a wonderful thing. A performant Type 1 hypervisor available natively to Windows client operating systems without the overhead of Type 2 hypervisors (VMware Workstation).
+The Hyper-V Default Network (Default Switch) available in Windows 10/11 Hyper-V is also a wonderful thing providing DHCP, DNS, and NAT (technically PAT/overload/DIPP) so VM&amp;rsquo;s can get an IP address and reach the rest of the world through the host&amp;rsquo;s physical wired/wireless adapter.</description>
+    </item>
     
     <item>
       <title>Engineering Culture - Leave it for the Next Person</title>

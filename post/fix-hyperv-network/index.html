@@ -2,19 +2,19 @@
 <html lang='en'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Two Techies Walk into a Bar'>
+<meta name='description' content='Making it challenging to statically assign IP addresses to VM&#39;s'>
 <meta name='theme-color' content='#ffcd00'>
 
-<meta property='og:title' content='Generation Loss — Part 1 • Urbanek.io'>
-<meta property='og:description' content='Two Techies Walk into a Bar'>
-<meta property='og:url' content='https://www.urbanek.io/post/generation-loss-part-1/'>
+<meta property='og:title' content='Windows 10/11 Hyper-V Default Network IP Address Keeps Changing • Urbanek.io'>
+<meta property='og:description' content='Making it challenging to statically assign IP addresses to VM&#39;s'>
+<meta property='og:url' content='https://www.urbanek.io/post/fix-hyperv-network/'>
 <meta property='og:site_name' content='Urbanek.io'>
-<meta property='og:type' content='article'><meta property='article:section' content='post'><meta property='article:tag' content='engineering'><meta property='article:tag' content='fundies'><meta property='article:tag' content='generation loss'><meta property='article:tag' content='powershell'><meta property='article:published_time' content='2020-05-11T21:42:08-06:00'/><meta property='article:modified_time' content='2020-05-11T21:42:08-06:00'/><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='article'><meta property='article:section' content='post'><meta property='article:tag' content='powershell'><meta property='article:tag' content='network'><meta property='article:published_time' content='2022-09-15T09:42:08-06:00'/><meta property='article:modified_time' content='2022-09-15T09:42:08-06:00'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.69.2" />
 
-  <title>Generation Loss — Part 1 • Urbanek.io</title>
-  <link rel='canonical' href='https://www.urbanek.io/post/generation-loss-part-1/'>
+  <title>Windows 10/11 Hyper-V Default Network IP Address Keeps Changing • Urbanek.io</title>
+  <link rel='canonical' href='https://www.urbanek.io/post/fix-hyperv-network/'>
   
   
   <link rel='icon' href='/favicon.ico'>
@@ -154,9 +154,9 @@ if (!doNotTrack) {
   <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>Generation Loss — Part 1</h1>
+      <h1 class='title'>Windows 10/11 Hyper-V Default Network IP Address Keeps Changing</h1>
       
-<p class='desc'>Two Techies Walk into a Bar</p>
+<p class='desc'>Making it challenging to statically assign IP addresses to VM&#39;s</p>
 
 
     </div>
@@ -170,7 +170,7 @@ if (!doNotTrack) {
   
 </svg>
 <span class='screen-reader-text'>Posted on </span>
-  <time class='entry-date' datetime='2020-05-11T21:42:08-06:00'>2020, May 11</time>
+  <time class='entry-date' datetime='2022-09-15T09:42:08-06:00'>2022, Sep 15</time>
 </span>
 
   
@@ -195,94 +195,87 @@ if (!doNotTrack) {
   
 
   <div class='container entry-content'>
-  
-<figure>
-   <a href="#28f3b2eb46ad4fa143c3dc8b4dd78164-lightbox">
-      <img src="AndreasRedRooster.jpg"
-            alt="Andreas Red Rooster" width="450" class="shadow"/> 
-   </a>
+  <figure>
+    <img src="HyperV.png"
+         alt="Hyper-V Logo" width="250"/> 
 </figure>
-<a href="#_" class="lightbox" id="28f3b2eb46ad4fa143c3dc8b4dd78164-lightbox">
-   <img src="AndreasRedRooster.jpg" alt="Andreas Red Rooster" >
-</a>
-<ul>
-<li><a href="https://www.urbanek.io/post/generation-loss-part-1/">Generation Loss — Part 1</a></li>
-<li><a href="https://www.urbanek.io/post/generation-loss-part-2/">Generation Loss — Part 2</a></li>
-</ul>
-<h2 id="two-techies-walk-into-a-bar">Two Techies Walk into a Bar</h2>
-<p><small><em>One has their credentials revoked</em></small></p>
-<p>Some time ago, prior to the COVID-19 social-distancing and safer-at-home orders, I was enjoying a beer with a fellow technology professional when something was said which caused my eyes to squint, head reposition, and settle in to a profoundly dumbfounded gaze:</p>
-<blockquote>
-<p>&ldquo;&hellip;kind of like when you copy a file and the copied data is not exact&hellip;&rdquo;</p>
-</blockquote>
+
+<p>Microsoft Hyper-V is a wonderful thing. A performant Type 1 hypervisor available natively to Windows <em>client</em> operating systems without the overhead of Type 2 hypervisors (VMware Workstation).</p>
+<p>The Hyper-V Default Network (Default Switch) available in Windows 10/11 Hyper-V is also a wonderful thing providing DHCP, DNS, and NAT (technically PAT/overload/DIPP) so VM&rsquo;s can get an IP address and reach the rest of the world through the host&rsquo;s physical wired/wireless adapter. No special configuration required, it just works.</p>
 
 <figure>
-   <a href="#1d02882977894a3b0d9c603bdf9b4a22-lightbox">
-      <img src="HeadScratch.jpg"
-            alt="Response" width="300" class="shadow"/> 
+   <a href="#de3a0081917947ee538ad84a386e20a3-lightbox">
+      <img src="HyperVDefaultNetwork.png"
+            alt="Hyper-V Default Network" width="450" class="shadow"/> 
    </a><figcaption>
-         <p><em>Response</em></p>
+         <p>Hyper-V Default Network (Default Switch)</p>
       </figcaption>
 </figure>
-<a href="#_" class="lightbox" id="1d02882977894a3b0d9c603bdf9b4a22-lightbox">
-   <img src="HeadScratch.jpg" alt="Response" >
+<a href="#_" class="lightbox" id="de3a0081917947ee538ad84a386e20a3-lightbox">
+   <img src="HyperVDefaultNetwork.png" alt="Hyper-V Default Network" >
 </a>
-<p>Such a statement needed <em>probing</em>. For the next few moments, I and anyone else within earshot were entertained by an <em>alternative understanding</em> whereby recursively copying a file on a computer file system would produce <em>inexact</em> copies. For example from <em>original-to-2</em>, then from <em>2-to-3</em>, <em>3-to-4</em>, and so on where at some low iteration would yield an inexact copy.</p>
-<blockquote>
-<p>A fascinating thought experiment with disastrous consequences for Tesla automobiles, cat pictures, and the adult content production industry.</p>
-</blockquote>
-<p>Such a phenomenon was once known as the <em>Xerox effect</em> (as in &ldquo;copy machine&rdquo;) where subsequent <em>copies-of-copies-of-copies</em> were fainter, blurrier, and noisier than the previous. Harold Ramis and Michael Keaton <a href="https://www.imdb.com/title/tt0117108/">made a movie about it</a>, <em>with humans</em>. Worth watching to see what dad jeans looked like in 1996 (<em>hint</em>: not much different than 2020).</p>
-<p><em>Inexact</em> replication (through <a href="https://en.wikipedia.org/wiki/Generation_loss">Generation Loss</a>) occurs in analog systems, analog-to-digital conversions (like a copy machine), and even <em>some</em> digital-to-digital processes (read on), but <strong>not</strong> on computer file system copy (replication) operations.</p>
-<p>Correcting <em>knowledge</em> misunderstanding in children that pay taxes (read: adults) is hard enough. A pub doesn&rsquo;t improve one&rsquo;s chances. <strong>Code was needed.</strong></p>
-<h3 id="test-generationloss-powershell">Test-GenerationLoss (PowerShell)</h3>
-<p><strong><a href="https://gist.github.com/jurbanek/149bc889e929c06c793f3f01e18603c7">And code there was</a>,</strong> <em>that night</em>.</p>
-<script type="application/javascript" src="https://gist.github.com/jurbanek/149bc889e929c06c793f3f01e18603c7.js"></script>
-
-<p>Not complicated, a <em>copy-of-copy-of-copy</em> is completed a defined number of iterations and the SHA256 hashes of the files are displayed. To my <em>surprise</em> <em>(no more than a child that pays taxes, remember)</em>, it worked — not the concept, but the test code (written after taking an Uber home, connect the dots).</p>
+<p><strong>What if a static IP address is needed for some of the VM&rsquo;s on a Windows 10/11 Hyper-V instance?</strong></p>
+<ul>
+<li>Find the IP address of Hyper-V&rsquo;s gateway (ipconfig.exe or Get-NetAdapter)</li>
+<li>Pick an address in the network</li>
+<li>Use the Hyper-V interface address as the default gateway</li>
+<li>Pick DNS resolvers (the Hyper-V gateway IP also works)</li>
+<li>Assign the parameters in the guest OS</li>
+</ul>
+<p><strong>Works well&hellip;</strong> <em><strong>until the Hyper-V host reboots</strong></em>.</p>
+<p>Reboot the Windows 10/11 host and find the Hyper-V Default Network (and interface IP address) has <em>changed</em>&hellip; <strong>breaking</strong> connectivity for guest VM&rsquo;s with static addresses. Guest VM&rsquo;s using DHCP pick up the change (the nature of DHCP).</p>
+<p>No way to disable the behavior on the Hyper-V Default Network (as of 2022-Sep). We have better things to do than re-IP statically assigned guest VM&rsquo;s every time the host reboots.</p>
+<h2 id="restore-hyper-v-default-network-address">Restore Hyper-V Default Network Address</h2>
+<p><strong><a href="https://gist.github.com/jurbanek/6411a39b613169a86602d0877fc4d555">And PowerShell there was</a></strong>. Full GitHub Gist below.</p>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Find the <code>Config</code> section</li>
+<li>Update/change the <code>IPv4Address</code> to preferred IPv4 address of the Hyper-V Default Network interface (which will be the default gateway for VM&rsquo;s)</li>
+<li>Update/change the <code>IPv4PrefixLength</code> to preferred prefix length, CIDR style. Hyper-V defaults to <code>20</code>. Do <strong>not</strong> enter in 255.255.240.0 form.</li>
+<li>Update/change the <code>InterfaceAlias</code> to Hyper-V Default Network interface name (determined from <code>ipconfig.exe</code> or <code>Get-NetAdapter</code>)</li>
+</ol>
 
 <figure>
-   <a href="#f20de0fc2b20bb8a27d3b0bb34438dc3-lightbox">
-      <img src="Test-GenerationLoss.png"
-            alt="Image: Test-GenerationLoss output" width="600" class="shadow"/> 
+   <a href="#b12936d7ab70bca45f16ad2742c6124d-lightbox">
+      <img src="Config.png"
+            alt="Config Section" class="shadow"/> 
    </a><figcaption>
-         <p>Image: Test-GenerationLoss output</p>
+         <p>Config Section</p>
       </figcaption>
 </figure>
-<a href="#_" class="lightbox" id="f20de0fc2b20bb8a27d3b0bb34438dc3-lightbox">
-   <img src="Test-GenerationLoss.png" alt="Image: Test-GenerationLoss output" >
+<a href="#_" class="lightbox" id="b12936d7ab70bca45f16ad2742c6124d-lightbox">
+   <img src="Config.png" alt="Config Section" >
 </a>
-<h3 id="exact-replication">Exact Replication</h3>
-<p>Making a <em>copy-of-copy-of-copy</em> on a computer file system <em>will</em> produce exact file <em>content</em> copies.</p>
-<ul>
-<li>Metadata including creation/modified timestamps <em>may</em> differ on the copies, but not the file <em>content</em>.</li>
-<li><a href="https://en.wikipedia.org/wiki/Data_degradation">Data degradation</a> (<em>bit rot</em>) can occur, but is <strong>not</strong> inherent to the copy/replication process in this digital system.</li>
-</ul>
-<p><em><strong>But why?</strong></em></p>
-<blockquote>
-<p><a href="https://en.wikipedia.org/wiki/Generation_loss">Generation loss</a> does <strong>not</strong> occur in a digital system <em>copy/replication</em> process <strong>when implemented correctly</strong>, that&rsquo;s why.</p>
-</blockquote>
-<ul>
-<li>Exact replication <strong>without</strong> generation loss is a fundamental <em>capability difference</em> between digital and analog systems.</li>
-<li>Digital compression, transcoding, re-encoding, resampling are digital system process examples that <a href="https://wikimili.com/en/Generation_loss#Techniques_that_cause_generation_loss_in_digital_systems"><strong>can</strong> introduce generation loss</a>.</li>
-</ul>
-<p>More nerd in the next part.</p>
-<p><a href="https://www.urbanek.io/post/generation-loss-part-2/"><figure>
-    <img src="ToBeContinued.png"
-         alt="To Be Continued..." width="300"/> 
-</figure>
-</a></p>
-<h4 id="afterword"><em>Afterword</em></h4>
+<h2 id="example">Example</h2>
 
 <figure>
-   <a href="#00028714067d09a62dba77ab9b2694f9-lightbox">
-      <img src="ClaudeShannon.jpg"
-            alt="Claude Shannon" width="450" class="shadow"/> 
-   </a>
+   <a href="#b35e2fff39611ef4f70479dcdcbeca0e-lightbox">
+      <img src="ExPS51.png"
+            alt="Example" class="shadow"/> 
+   </a><figcaption>
+         <p>Example run on PowerShell 5.1</p>
+      </figcaption>
 </figure>
-<a href="#_" class="lightbox" id="00028714067d09a62dba77ab9b2694f9-lightbox">
-   <img src="ClaudeShannon.jpg" alt="Claude Shannon" >
+<a href="#_" class="lightbox" id="b35e2fff39611ef4f70479dcdcbeca0e-lightbox">
+   <img src="ExPS51.png" alt="Example" >
 </a>
-<p><em>Were <a href="https://en.wikipedia.org/wiki/Claude_Shannon">Claude Shannon</a> sitting at the bar, he&rsquo;d hang his head concerning another form of generation loss.</em></p>
+<h3 id="consider">Consider</h3>
+<ul>
+<li>Local administrator privileges are required for service restarts. If the local account does not have them, an informative error will be presented.</li>
+<li>Frequently, the last service restart fails, but the result of the script is an overall success.</li>
+<li>VM&rsquo;s do not need to be restarted after the script completes.</li>
+<li>Run ad-hoc or as a scheduled task on boot.</li>
+<li>Tested against Windows PowerShell 5.1 and PowerShell 7.2</li>
+</ul>
+<h2 id="et-cetera">Et cetera</h2>
+<p>Other solutions to this challenge exist. Hyper-V supports building <em>additional</em> <code>Internal</code> virtual networks (virtual switches). Unfortunately, the default DHCP and NAT behavior is only possible on <em>one</em> Hyper-V&rsquo;s network. Many have reported challenges in getting it to work on networks other than the Default Network (Default Switch). Deploying DHCP and NAT by other means on additional <code>Internal</code> networks is more than trivial. It is simpler to apply the desired addressing the Default Network and use its DHCP and NAT capabilities.</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/63449007/how-to-prevent-the-ip-address-of-hyper-v-virtual-switch-from-being-changed">Stackoverflow: How to prevent the ip address of hyper-v virtual switch from being changed</a></li>
+<li><a href="https://docs.microsoft.com/en-us/answers/questions/48268/change-hyper-v-default-switch-ip-address-range.html">Microsoft Docs: Change Hyper-V (Default Switch) IP address range</a></li>
+<li><a href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/setup-nat-network">Microsoft Docs: Set up a NAT network</a></li>
+</ul>
+<script type="application/javascript" src="https://gist.github.com/jurbanek/6411a39b613169a86602d0877fc4d555.js"></script>
+
 
 </div>
 
@@ -300,7 +293,7 @@ if (!doNotTrack) {
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/engineering/'>engineering</a>, <a class='tag' href='/tags/fundies/'>fundies</a>, <a class='tag' href='/tags/generation-loss/'>generation loss</a>, <a class='tag' href='/tags/powershell/'>powershell</a></div>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/powershell/'>powershell</a>, <a class='tag' href='/tags/network/'>network</a></div>
 
   </div>
 </footer>
@@ -310,7 +303,7 @@ if (!doNotTrack) {
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/post/cautionary-tale-flight-2574/'>
+      <a href='/post/engineering-culture-leave-it-for-the-next-person/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -318,17 +311,7 @@ if (!doNotTrack) {
   
 </svg>
  Previous</span>
-        <span class='screen-reader-text'>Previous post: </span>Cautionary Tale — Continental Express Flight 2574</a>
-    </div><div class='next-entry sep-before'>
-      <a href='/post/generation-loss-part-2/'>
-        <span class='screen-reader-text'>Next post: </span>Generation Loss — Part 2<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="4" y1="12" x2="20" y2="12"/>
-  <polyline points="14 6 20 12 14 18"/>
-  
-</svg>
-</span>
-      </a>
+        <span class='screen-reader-text'>Previous post: </span>Engineering Culture - Leave it for the Next Person</a>
     </div></div>
 </nav>
 
